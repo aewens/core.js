@@ -1,20 +1,20 @@
 {
   "name": "core.js",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "Lightweight framework for scalable applications",
-  "author": "Mauricio Soares",
-  "homepage": "https://github.com/msodeveloper/core.js",
+  "author": "Mauricio Soares, Austin Ewens",
+  "homepage": "https://github.com/aewens/core.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/msodeveloper/core.js.git"
+    "url": "https://github.com/aewens/core.js.git"
   },
   "main": "dist/core.js",
   "scripts": {
     "test": "grunt ci"
   },
   "bugs": {
-    "url": "https://github.com/msodeveloper/core.js/issues"
+    "url": "https://github.com/aewens/core.js/issues"
   },
   "keywords": [
     "Framework",

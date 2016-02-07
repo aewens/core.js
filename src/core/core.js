@@ -161,25 +161,25 @@ Core.prototype.stop = function(module) {
 * @method stopAll
 */
 Core.prototype.stopAll = function() {
-  this.xAll('stop');
+  this.triggerAll('stop');
 };
 
 /**
 * Stop all started modules
 *
-* @method stopAll
+* @method startAll
 */
 Core.prototype.startAll = function() {
-  this.xAll('start');
+  this.triggerAll('start');
 };
 
 /**
 * Helper for startAll and stopAll
 *
-* @method xAll
+* @method triggerAll
 * @param {string} method the method that will be triggered
 */
-Core.prototype.xAll = function(method) {
+Core.prototype.triggerAll = function(method) {
   for(var module in this.modules) {
     if(this.modules.hasOwnProperty(module)) this[method](module);
   }
