@@ -15,8 +15,8 @@
 }(this, function () {
 
 /** 
-* core.js -v0.7.3
-* Copyright (c) 2016 Mauricio Soares
+* core.js -v0.7.4
+* Copyright (c) 2016 Mauricio Soares, Austin Ewens
 * Licensed MIT
 */
 
@@ -183,25 +183,25 @@ Core.prototype.stop = function(module) {
 * @method stopAll
 */
 Core.prototype.stopAll = function() {
-  this.xAll('stop');
+  this.triggerAll('stop');
 };
 
 /**
 * Stop all started modules
 *
-* @method stopAll
+* @method startAll
 */
 Core.prototype.startAll = function() {
-  this.xAll('start');
+  this.triggerAll('start');
 };
 
 /**
 * Helper for startAll and stopAll
 *
-* @method xAll
+* @method triggerAll
 * @param {string} method the method that will be triggered
 */
-Core.prototype.xAll = function(method) {
+Core.prototype.triggerAll = function(method) {
   for(var module in this.modules) {
     if(this.modules.hasOwnProperty(module)) this[method](module);
   }
